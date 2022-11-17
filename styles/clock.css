@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#clock {
+    width: 100%;
+    text-align: center;
+}
+
+#clock-face {
+    display: inline-block;
+    position: relative;
+    width: 900px;
+    height: 900px;
+    margin: 0 auto;
+    z-index: 10;
+    background-image: url("../assets/images/zafkiel_no_clockwork_gears.png");
+    background-size: cover;
+}
+
+#clock-gears {
+    position: absolute;
+    top: calc(50% - 220px);
+    left: calc(50% - 210px);
+    width: 420px;
+    height: 420px;
+    border-radius: 210px;
+    background-image: url("../assets/images/clockwork_gears_2.gif");
+    background-size: cover;
+    z-index: 1;
+}
+
+.clock-hand {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: calc(50% - 35px);
+    left: calc(50% - 23px);
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+.minute-hand {
+    /* animation: minute-spin 5s linear infinite;
+    -webkit-animation: minute-spin 5s linear infinite;
+    -moz-animation: minute-spin 5s linear infinite;
+    -ms-animation: minute-spin 5s linear infinite;
+    -o-animation: minute-spin 5s linear infinite; */
+    z-index: 20;
+}
+
+.hour-hand {
+    /* animation: minute-spin 60s linear infinite;
+    -webkit-animation: minute-spin 60s linear infinite;
+    -moz-animation: minute-spin 60s linear infinite;
+    -ms-animation: minute-spin 5s linear infinite;
+    -o-animation: minute-spin 5s linear infinite; */
+    z-index: 40;
+}
+
+.clock-hand > img {
+    width: 50px;
+    margin-top: 15px;
+}
+
+#character {
+    position: absolute;
+    top: calc(50% - 122px);
+    left: calc(50% - 145px);
+    z-index: 30;
+}
+
+#character > img {
+    width: 300px;
+}
+
+.clock-floater {
+    position: absolute;
+    width: 100px;
+    height: 900px;
+    left: calc(50% - 48px);
+    transform: scale(-1, -1);
+    font-size: 55px;
+    z-index: 50;
+}
+
+#hidden {
+    display: none;
+}
+
+@keyframes minute-spin {
+    100% {
+        transform: rotate(540deg);
+        -webkit-transform: rotate(540deg);
+        -moz-transform: rotate(540deg);
+        -ms-transform: rotate(540deg);
+        -o-transform: rotate(540deg);
+    }
+}
+
+@keyframes text-magic {
+    0% {
+        font-size: 55px;
+        color: #000000;
+    }
+    10% {
+        font-size: 61px;
+        color: #410b11;
+    }
+    20% {
+        font-size: 67px;
+        color: #6c131c;
+    }
+    30% {
+        font-size: 73px;
+        color: #981b27;
+    }
+    40% {
+        font-size: 79px;
+        color: #c32232;
+    }
+    50% {
+        font-size: 85px;
+        color: #dc3545;
+    }
+    60% {
+        font-size: 79px;
+        color: #c32232;
+    }
+    70% {
+        font-size: 73px;
+        color: #981b27;
+    }
+    80% {
+        font-size: 67px;
+        color: #6c131c;
+    }
+    90% {
+        font-size: 61px;
+        color: #410b11;
+    }
+    100% {
+        font-size: 55px;
+        color: #000000;
+    }
+}

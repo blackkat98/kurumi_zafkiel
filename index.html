@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Kurumi & Zafkiel </title>
+        <link rel="icon" href="./assets/images/kurumi.png" />
+        <link rel="stylesheet" href="./styles/clock.css" />
+    </head>
+    <body>
+        <div id="clock">
+            <div id="clock-face">
+                <div class="clock-hand minute-hand">
+                    <img src="./assets/images/kurumi_right_hand_alt.png" />
+                </div>
+                <div class="clock-hand hour-hand">
+                    <img src="./assets/images/kurumi_left_hand_alt.png" />
+                </div>
+                <div id="character">
+                    <img src="./assets/images/kurumi_full_body_side_look_no_hands_alt.png" />
+                </div>
+                <div id="clock-gears">
+                    
+                </div>
+            </div>
+        </div>
+        <div id="hidden">
+            <audio id="clock-tick" autoplay loop>
+                <source src="./assets/audios/clock_fast_tick.mp3" type="audio/mpeg">
+            </audio>
+            <audio id="clock-hour-change">
+                <source src="./assets/audios/zafkiel_hour_change.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <script src="./scripts/clock.js"></script>
+    </body>
+</html>
